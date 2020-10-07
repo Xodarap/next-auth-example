@@ -14,6 +14,6 @@ export default function Page () {
       </p>
       {!session && <button color="inherit" onClick={() => signin('google')}>Sign in</button>}
       {session && <button color="inherit" onClick={signout}>Sign out</button>}
-    </Layout>
+    </Layout> 
   )
 }
