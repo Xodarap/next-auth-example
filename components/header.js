@@ -18,11 +18,11 @@ export default function Header () {
           {!session && <>
             <span className={styles.notSignedInText}>You are not signed in</span>
             <a
-                href={`/api/auth/signin`}
+                href='#'
                 className={styles.buttonPrimary}
                 onClick={(e) => {
                   e.preventDefault()
-                  signIn()
+                  signIn('google')
                 }}
               >
                 Sign in
